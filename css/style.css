@@ -219,6 +219,7 @@ body {
   grid-template: repeat(8, 1fr)/repeat(8, 1fr);
   margin: 1rem;
   gap: 1rem;
+  overflow: hidden;
 }
 .gallery__item--1 {
   grid-row: 1/span 8;
