@@ -1,0 +1,30 @@
+.footer {
+  grid-column: full-start / full-end;
+
+  background-color: $color-secondary;
+  color: $color-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  &__nav {
+    list-style: none;
+    color: $color-light;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      padding: 1rem;
+      a {
+        text-decoration: none;
+        color: $color-light;
+      }
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+  }
+}

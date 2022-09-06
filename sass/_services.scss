@@ -1,0 +1,49 @@
+.services {
+  grid-column: center-start / center-end;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin: 5rem 2rem;
+
+  @media only screen and (max-width: $screen-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.service {
+  position: relative;
+
+  i {
+    display: block;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-weight: 300;
+    padding: 0 0 2rem 0;
+  }
+
+  &__read-more {
+    color: $color-info;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

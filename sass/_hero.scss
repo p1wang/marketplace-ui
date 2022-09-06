@@ -1,0 +1,28 @@
+.hero {
+  grid-column: full-start / full-end;
+
+  background-image: url(../assets//nike.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $color-light;
+  position: relative;
+
+  &__slogan {
+    font-size: 5rem;
+    max-width: 700px;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: 4rem;
+    }
+
+    @media only screen and (max-width: $screen-md) {
+      font-size: 3rem;
+      left: 5%;
+      bottom: 25%;
+    }
+  }
+}

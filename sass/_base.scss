@@ -1,0 +1,31 @@
+// colors
+$color-primary: #f7ecde;
+
+$color-secondary: #1b2430;
+
+$color-light: #fff;
+$color-dark: #000;
+$color-info: #0275d8;
+
+$screen-sm: 600px;
+$screen-md: 800px;
+$screen-lg: 1000px;
+$screen-xl: 1200px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 3rem minmax(20rem, 30vw) repeat(2, min-content) 40vw 150px;
+  grid-template-columns:
+    [full-start] 1fr [center-start]repeat(8, minmax(min-content, 140px))
+    [center-end] 1fr [full-end];
+}
