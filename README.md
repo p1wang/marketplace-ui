@@ -15,7 +15,7 @@
 </p>
 
 # Description
-UI design with Sass SCSS format, followed BEM CSS naming convention, Utilized mostly CSS Grid and some CSS Flexbox, responsive design.
+UI design with Sass SCSS syntax, followed BEM CSS naming convention, Utilized mostly CSS Grid and some CSS Flexbox, responsive design.
 
 
 # Stack
