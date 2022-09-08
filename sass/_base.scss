@@ -24,7 +24,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 3rem minmax(20rem, 30vw) repeat(2, min-content) 40vw 150px;
+  grid-template-rows: 3.5rem minmax(20rem, 30vw) repeat(2, min-content) 40vw 150px;
   grid-template-columns:
     [full-start] 1fr [center-start]repeat(8, minmax(min-content, 140px))
     [center-end] 1fr [full-end];

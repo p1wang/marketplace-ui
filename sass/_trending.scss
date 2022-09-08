@@ -26,7 +26,8 @@
 }
 
 .product {
-  border: 1px black solid;
+  border: 1px rgba(0, 0, 0, 0.3) solid;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   &__img {
     object-fit: cover;
     display: block;

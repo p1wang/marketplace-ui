@@ -10,16 +10,16 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 3rem minmax(20rem, 30vw) repeat(2, min-content) 40vw 150px;
+  grid-template-rows: 3.5rem minmax(20rem, 30vw) repeat(2, min-content) 40vw 150px;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, minmax(min-content, 140px)) [center-end] 1fr [full-end];
 }
 
 .header {
-  grid-column: full-start/full-end;
+  grid-column: center-start/center-end;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0 1rem;
 }
 .header__logo {
   margin-right: 1rem;
@@ -39,7 +39,7 @@ body {
 
 .sell-btn {
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px rgba(0, 0, 0, 0.3) solid;
   font-size: 1rem;
   padding: 6px 10px;
   border-radius: 15px;
@@ -59,7 +59,7 @@ body {
 .search {
   flex: 1;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .search {
     display: none;
   }
@@ -67,6 +67,7 @@ body {
 .search__input {
   width: 50ch;
   outline: none;
+  border: 1px rgba(0, 0, 0, 0.3) solid;
   flex: 1;
   font-size: 1rem;
   padding: 6px 10px;
@@ -78,7 +79,7 @@ body {
 }
 .search__btn {
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px rgba(0, 0, 0, 0.3) solid;
   font-size: 1rem;
   padding: 6px 10px;
 }
@@ -322,7 +323,8 @@ body {
 }
 
 .product {
-  border: 1px black solid;
+  border: 1px rgba(0, 0, 0, 0.3) solid;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
 }
 .product__img {
   object-fit: cover;
